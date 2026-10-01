@@ -30,17 +30,17 @@ describe('index.js Component Tests', () => {
 
     it('should keep company uppercase', () => {
       const payload = {
-        source: 'epam.com',
-        company: 'epam systems international srl',
-        cif: '33159615',
+        source: 'www.rebeldot.com',
+        company: 'rebeldot solutions s.r.l.',
+        cif: '39271439',
         jobs: [
-          { url: 'https://test.com/1', title: 'Job 1', company: 'epam systems', cif: '33159615' }
+          { url: 'https://test.com/1', title: 'Job 1', company: 'rebeldot', cif: '39271439' }
         ]
       };
 
       const result = index.transformJobsForSOLR(payload);
 
-      expect(result.company).toBe('EPAM SYSTEMS INTERNATIONAL SRL');
+      expect(result.company).toBe('REBELDOT SOLUTIONS S.R.L.');
     });
 
     it('should normalize workmode values', () => {
@@ -70,15 +70,15 @@ describe('index.js Component Tests', () => {
   describe('mapToJobModel', () => {
     it('should map raw job to job model format', () => {
       const rawJob = {
-        url: 'https://careers.epam.com/job/123',
+        url: 'https://careers.rebeldot.com/job/123',
         title: 'Senior Developer',
         location: ['Bucharest'],
         tags: ['Java', 'Spring'],
         workmode: 'hybrid'
       };
 
-      const COMPANY_NAME = 'EPAM SYSTEMS INTERNATIONAL SRL';
-      const COMPANY_CIF = '33159615';
+      const COMPANY_NAME = 'REBELDOT SOLUTIONS S.R.L.';
+      const COMPANY_CIF = '39271439';
 
       const result = index.mapToJobModel(rawJob, COMPANY_CIF, COMPANY_NAME);
 
@@ -99,7 +99,7 @@ describe('index.js Component Tests', () => {
         title: 'Job 1'
       };
 
-      const result = index.mapToJobModel(rawJob, '33159615');
+      const result = index.mapToJobModel(rawJob, '39271439');
 
       expect(result.location).toBeUndefined();
       expect(result.tags).toBeUndefined();
@@ -109,112 +109,56 @@ describe('index.js Component Tests', () => {
     it('should handle missing title', () => {
       const rawJob = { url: 'https://test.com/1' };
 
-      const result = index.mapToJobModel(rawJob, '33159615');
+      const result = index.mapToJobModel(rawJob, '39271439');
 
       expect(result.title).toBeUndefined();
       expect(result.url).toBe('https://test.com/1');
     });
   });
 
-  describe('parseApiJobs', () => {
-    it('should parse EPAM API response format', () => {
-      const apiData = {
-        data: {
-          total: 100,
-          jobs: [
-            {
-              uid: '123',
-              name: 'Senior Developer',
-              city: [{ name: 'Bucharest' }],
-              country: [{ name: 'Romania' }],
-              vacancy_type: 'Hybrid',
-              skills: ['Java', 'Spring']
-            }
-          ]
-        }
-      };
+  describe('parseJobsFromHtml', () => {
+    const html = `
+      <a href="https://careers.rebeldot.com/jobs/1-ai-engineer">AI Engineer</a>
+      <span class="text-base">
+        <span class="inline-flex">Hybrid</span>
+        <span>Cluj-Napoca, Brasov, Oradea</span>
+      </span>
+      <a href="/jobs/2-remote-dev">Remote Developer</a>
+      <span class="text-base"><span class="inline-flex">Remote</span></span>`;
 
-      const result = index.parseApiJobs(apiData);
+    it('should parse jobs, workmode, locations and tags', () => {
+      const { jobs, total } = index.parseJobsFromHtml(html);
 
-      expect(result.jobs).toHaveLength(1);
-      expect(result.jobs[0].title).toBe('Senior Developer');
-      expect(result.jobs[0].location).toEqual(['Bucharest']);
-      expect(result.jobs[0].workmode).toBe('hybrid');
+      expect(total).toBe(2);
+      expect(jobs[0].title).toBe('AI Engineer');
+      expect(jobs[0].url).toBe('https://careers.rebeldot.com/jobs/1-ai-engineer');
+      expect(jobs[0].workmode).toBe('hybrid');
+      expect(jobs[0].location).toEqual(['Cluj-Napoca', 'Brasov', 'Oradea']);
+      expect(jobs[0].tags).toContain('ai');
     });
 
-    it('should handle empty job list', () => {
-      const apiData = { data: { total: 0, jobs: [] } };
+    it('should resolve relative URLs and detect remote', () => {
+      const { jobs } = index.parseJobsFromHtml(html);
 
-      const result = index.parseApiJobs(apiData);
-
-      expect(result.jobs).toEqual([]);
+      expect(jobs[1].url).toBe('https://careers.rebeldot.com/jobs/2-remote-dev');
+      expect(jobs[1].workmode).toBe('remote');
+      expect(jobs[1].location).toEqual(['Cluj-Napoca']);
     });
 
-    it('should handle missing data field', () => {
-      const result = index.parseApiJobs({});
+    it('should not match short keywords inside other words', () => {
+      const { jobs } = index.parseJobsFromHtml('<a href="/jobs/3-maintainer">Maintainer</a>');
 
-      expect(result.jobs).toEqual([]);
+      expect(jobs[0].tags).not.toContain('ai');
     });
 
-    it('should handle multiple cities', () => {
-      const apiData = {
-        data: {
-          total: 1,
-          jobs: [
-            {
-              uid: '123',
-              name: 'Developer',
-              city: [{ name: 'Bucharest' }, { name: 'Cluj-Napoca' }],
-              country: [{ name: 'Romania' }]
-            }
-          ]
-        }
-      };
+    it('should skip anchors without a usable title', () => {
+      const { jobs } = index.parseJobsFromHtml('<a href="/jobs/4"></a>');
 
-      const result = index.parseApiJobs(apiData);
-
-      expect(result.jobs[0].location).toEqual(['Bucharest', 'Cluj-Napoca']);
-    });
-  });
-
-  describe('URL Generation', () => {
-    it('should use seo.url when available', () => {
-      const apiData = {
-        data: {
-          total: 1,
-          jobs: [
-            {
-              uid: 'blt123',
-              name: 'Test Job',
-              seo: { url: '/en/vacancy/test-job-blt123_en' },
-              city: [{ name: 'Bucharest' }]
-            }
-          ]
-        }
-      };
-
-      const result = index.parseApiJobs(apiData);
-
-      expect(result.jobs[0].url).toBe('https://careers.epam.com/en/vacancy/test-job-blt123_en');
+      expect(jobs).toEqual([]);
     });
 
-    it('should fallback to uid-based URL when no seo.url', () => {
-      const apiData = {
-        data: {
-          total: 1,
-          jobs: [
-            {
-              uid: 'blt456',
-              name: 'Test Job',
-              city: [{ name: 'Bucharest' }]
-            }
-          ]
-        }
-      };
-
-      const result = index.parseApiJobs(apiData);
-
-      expect(result.jobs[0].url).toBe('https://careers.epam.com/en/vacancy/blt456_en');
+    it('should handle empty HTML', () => {
+      expect(index.parseJobsFromHtml('')).toEqual({ jobs: [], total: 0 });
     });
   });
 });

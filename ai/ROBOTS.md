@@ -1,27 +1,36 @@
-# Robots.txt Analysis — EPAM Careers
+# Robots.txt Analysis — RebelDot Careers
 
-Sursa: https://careers.epam.com/robots.txt
+Sursa: https://careers.rebeldot.com/robots.txt
 
-## Reguli
+## Reguli relevante
 
 ```
-User-agent: *
-Disallow: /
+User-Agent: *
+Disallow: /app/
+Disallow: /messages/
+Disallow: /messenger/
+Disallow: /facebook/tab/
+Disallow: /jobs/internal/
+Content-Signal: search=yes, ai-train=no, ai-input=yes
 ```
+
+(Un agent separat, `aihitdata`, este blocat complet — nu afectează `job_seeker_ro_spider`.)
 
 ## Interpretare
 
 | Cale | Accesibil? | Ce conține |
 |---|---|---|
-| `/` | ❌ Disallowed | Tot site-ul |
-| API (`/api/jobs/v2/...`) | ❌ Disallowed | API-ul JSON de la care scraper-ul extrage datele |
+| `/jobs` | ✅ Allowed | Lista tuturor job-urilor |
+| `/jobs/<id>-<slug>` | ✅ Allowed | Pagina unui job (doar verificată cu HEAD în teste) |
+| `/jobs/internal/` | ❌ Disallowed | Job-uri interne — nu sunt folosite |
+| `/app/`, `/messages/` | ❌ Disallowed | Nu sunt folosite |
 
 ## Recomandare
 
-robots.txt NU este legal binding, dar reprezintă intenția proprietarului site-ului.
+Scraper-ul face o singură cerere GET către `/jobs` cu User-Agent `job_seeker_ro_spider`. `Content-Signal` interzice antrenarea de modele AI (`ai-train=no`); scraper-ul doar listează anunțuri în peviitor.ro, nu antrenează modele.
 
-- API-ul `/api/jobs/v2/search/...` e **disallowed** de robots.txt. În practică, serverul răspunde cu 200 OK cu `User-Agent` normal și fără autentificare.
-- Paginile individuale de job sunt și ele disallowed. Noi nu le scraper-uim direct — doar le verificăm accesibilitatea (HEAD request) în teste.
-- Scraperul curent face o singură cerere per pagină (10 job-uri) cu delay de 1s între pagini — comportament rezonabil, nu agresiv.
+**Concluzie**: Risc minim — calea folosită este permisă.
 
-**Concluzie**: Risc minim. API-ul e public, răspunde fără autentificare, iar scraperul e politicos (rate limiting, User-Agent standard, o singură cerere simultană).
+## Diferență față de EPAM template
+
+EPAM Careers dezactivează API-ul prin robots.txt; RebelDot permite `/jobs`, deci scraper-ul nu are această limitare.

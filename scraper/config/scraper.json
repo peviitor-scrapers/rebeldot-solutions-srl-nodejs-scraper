@@ -1,4 +1,5 @@
 {
-  "apiBase": "https://careers.epam.com",
-  "apiCountryId": "8150000000000001155"
+  "apiBase": "https://careers.rebeldot.com",
+  "apiListPath": "/jobs",
+  "defaultLocation": "Cluj-Napoca"
 }
