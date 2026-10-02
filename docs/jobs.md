@@ -10,11 +10,11 @@
 | Location | JUD. CLUJ, SAT SĂLICEA COM. CIURILA, G SĂLICEA, NR.104F |
 | Website | [https://www.rebeldot.com](https://www.rebeldot.com) |
 | Careers | [https://careers.rebeldot.com](https://careers.rebeldot.com) |
-| Last Scraped | 2026-10-01 |
+| Last Scraped | 2026-10-02 |
 
 ## Current Job Listings (12)
 
-_Generated: 2026-10-01T10:12:26.756Z_
+_Generated: 2026-10-02T11:24:56.125Z_
 
 ### IT System Administrator
 
