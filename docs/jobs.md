@@ -10,11 +10,11 @@
 | Location | JUD. CLUJ, SAT SĂLICEA COM. CIURILA, G SĂLICEA, NR.104F |
 | Website | [https://www.rebeldot.com](https://www.rebeldot.com) |
 | Careers | [https://careers.rebeldot.com](https://careers.rebeldot.com) |
-| Last Scraped | 2026-10-07 |
+| Last Scraped | 2026-10-08 |
 
-## Current Job Listings (12)
+## Current Job Listings (11)
 
-_Generated: 2026-10-07T12:07:12.794Z_
+_Generated: 2026-10-08T12:17:26.541Z_
 
 ### IT System Administrator
 
@@ -28,13 +28,6 @@ _Generated: 2026-10-07T12:07:12.794Z_
 - **URL:** [https://careers.rebeldot.com/jobs/8385601-full-stack-engineer-with-ionic-angular](https://careers.rebeldot.com/jobs/8385601-full-stack-engineer-with-ionic-angular)
 - **Work Mode:** hybrid
 - **Location:** Cluj-Napoca, Brasov, Oradea
-- **Status:** scraped
-
-### Lead QA Automation Engineer
-
-- **URL:** [https://careers.rebeldot.com/jobs/8380500-lead-qa-automation-engineer](https://careers.rebeldot.com/jobs/8380500-lead-qa-automation-engineer)
-- **Work Mode:** hybrid
-- **Location:** Cluj-Napoca
 - **Status:** scraped
 
 ### AI Engineer
