@@ -10,18 +10,11 @@
 | Location | JUD. CLUJ, SAT SĂLICEA COM. CIURILA, G SĂLICEA, NR.104F |
 | Website | [https://www.rebeldot.com](https://www.rebeldot.com) |
 | Careers | [https://careers.rebeldot.com](https://careers.rebeldot.com) |
-| Last Scraped | 2026-10-13 |
+| Last Scraped | 2026-10-14 |
 
-## Current Job Listings (11)
+## Current Job Listings (10)
 
-_Generated: 2026-10-13T12:59:52.848Z_
-
-### IT System Administrator
-
-- **URL:** [https://careers.rebeldot.com/jobs/8447088-it-system-administrator](https://careers.rebeldot.com/jobs/8447088-it-system-administrator)
-- **Work Mode:** hybrid
-- **Location:** Cluj-Napoca
-- **Status:** scraped
+_Generated: 2026-10-14T10:40:37.048Z_
 
 ### Full-Stack Engineer (with Ionic & Angular)
 
