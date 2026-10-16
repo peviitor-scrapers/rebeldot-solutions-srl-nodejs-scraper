@@ -10,11 +10,11 @@
 | Location | JUD. CLUJ, SAT SĂLICEA COM. CIURILA, G SĂLICEA, NR.104F |
 | Website | [https://www.rebeldot.com](https://www.rebeldot.com) |
 | Careers | [https://careers.rebeldot.com](https://careers.rebeldot.com) |
-| Last Scraped | 2026-10-15 |
+| Last Scraped | 2026-10-16 |
 
 ## Current Job Listings (10)
 
-_Generated: 2026-10-15T10:24:06.670Z_
+_Generated: 2026-10-16T10:11:39.493Z_
 
 ### Full-Stack Engineer (with Ionic & Angular)
 
