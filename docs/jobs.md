@@ -10,11 +10,19 @@
 | Location | JUD. CLUJ, SAT SĂLICEA COM. CIURILA, G SĂLICEA, NR.104F |
 | Website | [https://www.rebeldot.com](https://www.rebeldot.com) |
 | Careers | [https://careers.rebeldot.com](https://careers.rebeldot.com) |
-| Last Scraped | 2026-10-23 |
+| Last Scraped | 2026-10-24 |
 
-## Current Job Listings (10)
+## Current Job Listings (11)
 
-_Generated: 2026-10-23T10:34:51.017Z_
+_Generated: 2026-10-24T09:52:25.086Z_
+
+### Senior Software Engineer (.NET + React)
+
+- **URL:** [https://careers.rebeldot.com/jobs/8608132-senior-software-engineer-net-react](https://careers.rebeldot.com/jobs/8608132-senior-software-engineer-net-react)
+- **Work Mode:** hybrid
+- **Location:** Cluj-Napoca
+- **Tags:** react, .net
+- **Status:** scraped
 
 ### Full-Stack Engineer (with Ionic & Angular)
 
