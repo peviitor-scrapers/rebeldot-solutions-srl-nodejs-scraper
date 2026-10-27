@@ -10,11 +10,19 @@
 | Location | JUD. CLUJ, SAT SĂLICEA COM. CIURILA, G SĂLICEA, NR.104F |
 | Website | [https://www.rebeldot.com](https://www.rebeldot.com) |
 | Careers | [https://careers.rebeldot.com](https://careers.rebeldot.com) |
-| Last Scraped | 2026-10-26 |
+| Last Scraped | 2026-10-27 |
 
-## Current Job Listings (10)
+## Current Job Listings (9)
 
-_Generated: 2026-10-26T11:36:20.372Z_
+_Generated: 2026-10-27T11:06:40.066Z_
+
+### Dynamics 365 Solution Architect
+
+- **URL:** [https://careers.rebeldot.com/jobs/8619364-dynamics-365-solution-architect](https://careers.rebeldot.com/jobs/8619364-dynamics-365-solution-architect)
+- **Work Mode:** hybrid
+- **Location:** Cluj-Napoca, Brasov, Oradea
+- **Tags:** architect
+- **Status:** scraped
 
 ### Senior Software Engineer (.NET + React)
 
@@ -39,27 +47,12 @@ _Generated: 2026-10-26T11:36:20.372Z_
 - **Tags:** ai, data
 - **Status:** scraped
 
-### Product Designer
-
-- **URL:** [https://careers.rebeldot.com/jobs/8206385-product-designer](https://careers.rebeldot.com/jobs/8206385-product-designer)
-- **Work Mode:** hybrid
-- **Location:** Cluj-Napoca, Brasov, Oradea
-- **Tags:** ux design
-- **Status:** scraped
-
 ### Senior Data Engineer
 
 - **URL:** [https://careers.rebeldot.com/jobs/8137998-senior-data-engineer](https://careers.rebeldot.com/jobs/8137998-senior-data-engineer)
 - **Work Mode:** hybrid
 - **Location:** Cluj-Napoca, Brasov, Oradea
 - **Tags:** ai, data
-- **Status:** scraped
-
-### Product Manager
-
-- **URL:** [https://careers.rebeldot.com/jobs/8065177-product-manager](https://careers.rebeldot.com/jobs/8065177-product-manager)
-- **Work Mode:** hybrid
-- **Location:** Cluj-Napoca, Brasov, Oradea
 - **Status:** scraped
 
 ### Lead GenAI Engineer
