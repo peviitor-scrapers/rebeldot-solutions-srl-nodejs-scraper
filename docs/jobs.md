@@ -10,11 +10,11 @@
 | Location | JUD. CLUJ, SAT SĂLICEA COM. CIURILA, G SĂLICEA, NR.104F |
 | Website | [https://www.rebeldot.com](https://www.rebeldot.com) |
 | Careers | [https://careers.rebeldot.com](https://careers.rebeldot.com) |
-| Last Scraped | 2026-10-27 |
+| Last Scraped | 2026-10-28 |
 
 ## Current Job Listings (9)
 
-_Generated: 2026-10-27T11:06:40.066Z_
+_Generated: 2026-10-28T11:43:08.464Z_
 
 ### Dynamics 365 Solution Architect
 
