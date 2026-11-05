@@ -10,11 +10,11 @@
 | Location | JUD. CLUJ, SAT SĂLICEA COM. CIURILA, G SĂLICEA, NR.104F |
 | Website | [https://www.rebeldot.com](https://www.rebeldot.com) |
 | Careers | [https://careers.rebeldot.com](https://careers.rebeldot.com) |
-| Last Scraped | 2026-11-04 |
+| Last Scraped | 2026-11-05 |
 
-## Current Job Listings (9)
+## Current Job Listings (8)
 
-_Generated: 2026-11-04T13:19:33.465Z_
+_Generated: 2026-11-05T13:32:40.623Z_
 
 ### Dynamics 365 Solution Architect
 
@@ -30,13 +30,6 @@ _Generated: 2026-11-04T13:19:33.465Z_
 - **Work Mode:** hybrid
 - **Location:** Cluj-Napoca
 - **Tags:** react, .net
-- **Status:** scraped
-
-### Full-Stack Engineer (with Ionic & Angular)
-
-- **URL:** [https://careers.rebeldot.com/jobs/8385601-full-stack-engineer-with-ionic-angular](https://careers.rebeldot.com/jobs/8385601-full-stack-engineer-with-ionic-angular)
-- **Work Mode:** hybrid
-- **Location:** Cluj-Napoca, Brasov, Oradea
 - **Status:** scraped
 
 ### AI Engineer
