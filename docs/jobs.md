@@ -10,11 +10,11 @@
 | Location | JUD. CLUJ, SAT SĂLICEA COM. CIURILA, G SĂLICEA, NR.104F |
 | Website | [https://www.rebeldot.com](https://www.rebeldot.com) |
 | Careers | [https://careers.rebeldot.com](https://careers.rebeldot.com) |
-| Last Scraped | 2026-11-11 |
+| Last Scraped | 2026-11-12 |
 
 ## Current Job Listings (8)
 
-_Generated: 2026-11-11T13:00:11.340Z_
+_Generated: 2026-11-12T14:02:09.752Z_
 
 ### Dynamics 365 Solution Architect
 
@@ -32,9 +32,9 @@ _Generated: 2026-11-11T13:00:11.340Z_
 - **Tags:** react, .net
 - **Status:** scraped
 
-### Power Platform Engineer
+### Microsoft Copilot Engineer/ Power Platform Engineer
 
-- **URL:** [https://careers.rebeldot.com/jobs/8473598-power-platform-engineer](https://careers.rebeldot.com/jobs/8473598-power-platform-engineer)
+- **URL:** [https://careers.rebeldot.com/jobs/8473598-microsoft-copilot-engineer-power-platform-engineer](https://careers.rebeldot.com/jobs/8473598-microsoft-copilot-engineer-power-platform-engineer)
 - **Work Mode:** hybrid
 - **Location:** Cluj-Napoca, Brasov, Oradea
 - **Status:** scraped
