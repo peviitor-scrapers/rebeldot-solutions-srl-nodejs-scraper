@@ -10,11 +10,11 @@
 | Location | JUD. CLUJ, SAT SĂLICEA COM. CIURILA, G SĂLICEA, NR.104F |
 | Website | [https://www.rebeldot.com](https://www.rebeldot.com) |
 | Careers | [https://careers.rebeldot.com](https://careers.rebeldot.com) |
-| Last Scraped | 2026-11-17 |
+| Last Scraped | 2026-11-18 |
 
-## Current Job Listings (8)
+## Current Job Listings (7)
 
-_Generated: 2026-11-17T14:57:58.510Z_
+_Generated: 2026-11-18T14:38:31.984Z_
 
 ### .NET Solutions Architect
 
@@ -61,14 +61,6 @@ _Generated: 2026-11-17T14:57:58.510Z_
 - **Work Mode:** hybrid
 - **Location:** Cluj-Napoca
 - **Tags:** generative ai, ai, data
-- **Status:** scraped
-
-### Senior Fullstack Software Engineer (Java & Angular)
-
-- **URL:** [https://careers.rebeldot.com/jobs/7375830-senior-fullstack-software-engineer-java-angular](https://careers.rebeldot.com/jobs/7375830-senior-fullstack-software-engineer-java-angular)
-- **Work Mode:** hybrid
-- **Location:** Cluj-Napoca
-- **Tags:** java
 - **Status:** scraped
 
 ### Data Architect
