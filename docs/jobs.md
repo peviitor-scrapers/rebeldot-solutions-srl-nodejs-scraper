@@ -10,11 +10,11 @@
 | Location | JUD. CLUJ, SAT SĂLICEA COM. CIURILA, G SĂLICEA, NR.104F |
 | Website | [https://www.rebeldot.com](https://www.rebeldot.com) |
 | Careers | [https://careers.rebeldot.com](https://careers.rebeldot.com) |
-| Last Scraped | 2026-11-22 |
+| Last Scraped | 2026-11-23 |
 
 ## Current Job Listings (7)
 
-_Generated: 2026-11-22T13:39:16.782Z_
+_Generated: 2026-11-23T16:34:16.777Z_
 
 ### .NET Solutions Architect
 
