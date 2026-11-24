@@ -10,11 +10,18 @@
 | Location | JUD. CLUJ, SAT SĂLICEA COM. CIURILA, G SĂLICEA, NR.104F |
 | Website | [https://www.rebeldot.com](https://www.rebeldot.com) |
 | Careers | [https://careers.rebeldot.com](https://careers.rebeldot.com) |
-| Last Scraped | 2026-11-23 |
+| Last Scraped | 2026-11-24 |
 
-## Current Job Listings (7)
+## Current Job Listings (8)
 
-_Generated: 2026-11-23T16:34:16.777Z_
+_Generated: 2026-11-24T16:32:20.976Z_
+
+### Business Analyst
+
+- **URL:** [https://careers.rebeldot.com/jobs/8768052-business-analyst](https://careers.rebeldot.com/jobs/8768052-business-analyst)
+- **Work Mode:** hybrid
+- **Location:** Cluj-Napoca, Brasov, Oradea
+- **Status:** scraped
 
 ### .NET Solutions Architect
 
