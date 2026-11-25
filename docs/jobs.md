@@ -10,11 +10,27 @@
 | Location | JUD. CLUJ, SAT SĂLICEA COM. CIURILA, G SĂLICEA, NR.104F |
 | Website | [https://www.rebeldot.com](https://www.rebeldot.com) |
 | Careers | [https://careers.rebeldot.com](https://careers.rebeldot.com) |
-| Last Scraped | 2026-11-24 |
+| Last Scraped | 2026-11-25 |
 
-## Current Job Listings (8)
+## Current Job Listings (10)
 
-_Generated: 2026-11-24T16:32:20.976Z_
+_Generated: 2026-11-25T16:12:26.094Z_
+
+### DevOps Engineer
+
+- **URL:** [https://careers.rebeldot.com/jobs/8795486-devops-engineer](https://careers.rebeldot.com/jobs/8795486-devops-engineer)
+- **Work Mode:** hybrid
+- **Location:** Cluj-Napoca, Brasov, Oradea
+- **Tags:** devops
+- **Status:** scraped
+
+### DevOps Engineer
+
+- **URL:** [https://careers.rebeldot.com/jobs/8794195-devops-engineer](https://careers.rebeldot.com/jobs/8794195-devops-engineer)
+- **Work Mode:** hybrid
+- **Location:** Cluj-Napoca
+- **Tags:** devops
+- **Status:** scraped
 
 ### Business Analyst
 
