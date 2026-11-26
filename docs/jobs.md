@@ -10,18 +10,18 @@
 | Location | JUD. CLUJ, SAT SĂLICEA COM. CIURILA, G SĂLICEA, NR.104F |
 | Website | [https://www.rebeldot.com](https://www.rebeldot.com) |
 | Careers | [https://careers.rebeldot.com](https://careers.rebeldot.com) |
-| Last Scraped | 2026-11-25 |
+| Last Scraped | 2026-11-26 |
 
-## Current Job Listings (10)
+## Current Job Listings (12)
 
-_Generated: 2026-11-25T16:12:26.094Z_
+_Generated: 2026-11-26T15:51:38.793Z_
 
-### DevOps Engineer
+### DevOps Engineer (with Azure)
 
-- **URL:** [https://careers.rebeldot.com/jobs/8795486-devops-engineer](https://careers.rebeldot.com/jobs/8795486-devops-engineer)
+- **URL:** [https://careers.rebeldot.com/jobs/8795486-devops-engineer-with-azure](https://careers.rebeldot.com/jobs/8795486-devops-engineer-with-azure)
 - **Work Mode:** hybrid
 - **Location:** Cluj-Napoca, Brasov, Oradea
-- **Tags:** devops
+- **Tags:** devops, azure
 - **Status:** scraped
 
 ### DevOps Engineer
@@ -32,11 +32,27 @@ _Generated: 2026-11-25T16:12:26.094Z_
 - **Tags:** devops
 - **Status:** scraped
 
+### Data Engineer (with Snowplow)
+
+- **URL:** [https://careers.rebeldot.com/jobs/8781797-data-engineer-with-snowplow](https://careers.rebeldot.com/jobs/8781797-data-engineer-with-snowplow)
+- **Work Mode:** hybrid
+- **Location:** Cluj-Napoca, Brasov, Oradea
+- **Tags:** ai, data
+- **Status:** scraped
+
 ### Business Analyst
 
 - **URL:** [https://careers.rebeldot.com/jobs/8768052-business-analyst](https://careers.rebeldot.com/jobs/8768052-business-analyst)
 - **Work Mode:** hybrid
 - **Location:** Cluj-Napoca, Brasov, Oradea
+- **Status:** scraped
+
+### Creative Designer
+
+- **URL:** [https://careers.rebeldot.com/jobs/8753015-creative-designer](https://careers.rebeldot.com/jobs/8753015-creative-designer)
+- **Work Mode:** hybrid
+- **Location:** Cluj-Napoca, Brasov, Oradea
+- **Tags:** ux design
 - **Status:** scraped
 
 ### .NET Solutions Architect
