@@ -7,14 +7,14 @@
 | CIF | 39271439 |
 | Brand | RebelDot |
 | Status | activ |
-| Location | JUD. CLUJ, SAT SĂLICEA COM. CIURILA, G SĂLICEA, NR.104F |
+| Location | Cluj-Napoca |
 | Website | [https://www.rebeldot.com](https://www.rebeldot.com) |
 | Careers | [https://careers.rebeldot.com](https://careers.rebeldot.com) |
-| Last Scraped | 2026-11-27 |
+| Last Scraped | 2026-11-28 |
 
 ## Current Job Listings (12)
 
-_Generated: 2026-11-27T15:39:58.376Z_
+_Generated: 2026-11-28T14:36:08.550Z_
 
 ### DevOps Engineer (with Azure)
 
